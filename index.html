@@ -1,0 +1,52 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Music Player</title>
+<link rel="stylesheet" href="musicplaylist.css">
+	</head>
+    <body>
+        <section>
+
+        </section>
+<div class="music">
+    <h2 class="title">Music Name</h2>
+    <div class="player">
+        
+        <audio src=""></audio>
+        <div class="btns">
+            <span class="prev">
+                <ion-icon name="play-back-outline"></ion-icon>
+            </span>
+            <span class="playPause">
+                <ion-icon name="play-outline"></ion-icon>
+            </span>
+            <span class="next">
+                <ion-icon name="play-forward-outline"></ion-icon>
+
+            </span>
+        </div>
+    </div>
+</div>
+<div><p >MIT License Copyright (c) 2017 Pim Schreurs(JS Framework), Copyright (c) MusicMaterial(The website says you don't need to mention the Copyright, but I think these musics are so great.)</p></div>
+<div><p></p> </div>
+
+
+<script src="musicplaylist.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="jquery.ripples-min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('section').ripples({
+                dropRadius: 20,
+               perturbance: 0.08,
+
+            });
+        })
+    </script>
+
+    </body>
+</html>
