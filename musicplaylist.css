@@ -126,3 +126,104 @@ p
     left: 0;
     font-size: 17px;
 }
+@media (max-width:550px) {
+
+    .music
+    {
+     display: flex;
+    
+     align-items: center;
+     flex-direction: column;
+     position: absolute;
+       bottom: 120px;
+    }
+    
+    .title
+    {
+    width: 200px;
+    min-height: 100px;
+     font-weight: 400;
+     display: inline-flex;
+     font-size: 20px;
+     color: #1e90ff;
+     text-align: center; 
+     background: rgba(225, 225, 255, 0.1);
+     margin-bottom: 20px;
+     border-radius: 50px;
+     padding: 20px 30px;
+     box-shadow: 20px 20px 30px rgba(0,0,0,0.5);
+     
+    }
+    .player
+    {
+        position: relative;
+        
+        width: 300px;
+        min-height: 200px;
+        display: flex;
+    
+        background: rgba(225, 225, 255, 0.1);
+     
+        border-radius: 50px;
+        padding: 20px 30px;
+        box-shadow: 20px 20px 30px rgba(0,0,0,0.5);
+                     
+    
+    
+    }
+    .btns
+    {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    
+    
+    }
+    .btns span
+    {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: rgba(225, 225, 255, 0.1);
+     
+        box-shadow: 20px 20px 30px rgba(0,0,0,0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #777;
+        cursor: pointer;
+        
+    } 
+    .btns span:active,
+    .btns span.active
+    {
+     color: #1e90ff;
+     box-shadow: inset 0 -7px 5px rgba(0,0,0,0.025),
+                inset 0 5px 10px rgba(0,0,0,0.15);
+    }
+    .btns span.playPause
+    {
+        width: 100px;
+        height: 100px;
+    
+    }
+    .btns span ion-icon
+    {
+        font-size: 2em;
+    }
+    .btns span.playPause ion-icon
+    {
+        font-size: 3em;
+    }
+    p
+    {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 15px;
+    }
+    
+}
